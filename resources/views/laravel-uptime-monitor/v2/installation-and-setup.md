@@ -29,6 +29,12 @@ To publish the config file to `config/laravel-uptime-monitor.php` run:
 php artisan vendor:publish --provider="Spatie\UptimeMonitor\UptimeMonitorServiceProvider"
 ```
 
+After the vendor files have been published you should run your migrations to create the monitors table:
+
+```php
+php artisan migrate
+```
+
 The default contents of the configuration looks like this:
 
 ```php
